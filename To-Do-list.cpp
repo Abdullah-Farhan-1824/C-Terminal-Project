@@ -19,14 +19,6 @@ taskcount++;
 cout << "Task added!" << endl;
 }
 
-void showTasks() {
-    if (taskCount == 0) {
-        cout << "No tasks found!" << endl;
-        return;
-    }
-    cout << "\n--- Your Tasks ---" << endl;
-    for (int i = 0; i < taskCount; i++) {
-        cout << i + 1 << ". " << tasks[i] << endl;
 void showtasks(){
     if (taskcount == 0) { 
        cout << "No tasks found! " << endl;
@@ -38,12 +30,6 @@ void showtasks(){
    cout << "---------------------" << endl;       
 }
 
-void deleteTask() {
-    if (taskCount == 0) {
-        cout << "No tasks to delete!" << endl;
-        return;
-    }
-    showTasks();
 void delete_task(){
   if( taskcount == 0 ){  
   cout << "No tasks here! " << endl;
@@ -64,7 +50,6 @@ void delete_task(){
     cout << "Task deleted successfully! " << endl ;
 }
 
-void exitProgram() {                //to exit the program
 void exitprogram() {                //to exit the program
     cout << "Thank You!!" << endl;
     exit(0);
@@ -72,10 +57,6 @@ void exitprogram() {                //to exit the program
 }
 
 int main() {
-    addTask();
-    showTasks();
-    deleteTask();
-    exitProgram();
     while (1) {
     cout << "********* To Do List: **********" << endl;
     cout << "1.Enter a task: " << endl;
